@@ -1,15 +1,18 @@
-﻿
+﻿using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Menu : MonoBehaviour
 {
-     void gamestart()
+     public void gamestart()
     {
-        
+
+        Debug.Log("start");
+        SceneManager.LoadScene("LV1");
     }
 
-     void quit()
+     public void quit()
     {
-        
+        Debug.Log("quit");
+        Application.Quit();
     }
 }
